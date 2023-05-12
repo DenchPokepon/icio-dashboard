@@ -7,11 +7,11 @@ export default function() {
                 <img className="logo" src="./src/assets/oecd-logo-1030x995.png" />
             </a>
             <div className='navbar-etc'>
-                <a className='navbar-etc-element'>CROSS-COUNTRY-SECTOR LINKAGES</a>
-                <a className='navbar-etc-element'>COUNTRY PROFILES</a>
-                <a className='navbar-etc-element'>EMPLOYMENT & GVC</a>
-                <a className='navbar-etc-element'>CO2 & GVC</a>
-                <a className='navbar-etc-element'>ABOUT</a>
+                <a className='navbar-etc-element' href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">CROSS-COUNTRY-SECTOR LINKAGES</a>
+                <a className='navbar-etc-element 'href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">COUNTRY PROFILES</a>
+                <a className='navbar-etc-element'href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">EMPLOYMENT & GVC</a>
+                <a className='navbar-etc-element'href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">CO2 & GVC</a>
+                <a className='navbar-etc-element'href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">ABOUT</a>
             </div>
         </nav>
     )

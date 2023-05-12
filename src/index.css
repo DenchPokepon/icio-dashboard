@@ -1,10 +1,14 @@
 /* GLOBAL */
 * {
   box-sizing: border-box;
+  transform: scale(1);/*масштаб страницы */
+  transform-origin: 0 0;/*масштаб страницы */
+  padding:0;
+ 
 }
 
 body {
-  margin: 0 2rem;
+  margin: 0 0;
   font-family: 'Inter', sans-serif; 
   font-weight: 300;
 }
@@ -20,29 +24,53 @@ body {
 /* navbar */
 .navbar {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
   height: 10%;
-  margin: 0;
+  margin: 0 0;
+  background-color: #dbe9ff;
+  font-size: 1.5vh;
+  font-weight: bold;
+
 }
 
 .logo {
-  display: flex;
-  align-content: center;
-  max-width: 200%;
-  max-height: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  padding: 0.5rem 5rem;
+  width: 100%;
+  height: 100%;
+  margin-left: 30%;
 }
 
 .navbar-etc {
-  display: flex;
-  align-content: center;
-  padding: 0rem 5rem 0rem 0rem;
+  flex: 1;
+  text-align: right;
+}
+.navbar-etc ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
 }
 
-.navbar-etc-element {
+.navbar-etc ul li a{
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 0px 1px black;
+  }
+  .navbar-etc ul li::after{
+   content: "";
+   width: 0%;
+   height: 3px;
+   background: white;
+   display: block;
+   transition: 0.3s ease-out;
+    }
+    .navbar-etc ul li:hover::after{
+      width: 100%;
+    }
+
+
+
+  /* .navbar-etc-element {
   display: flex;
   max-width: 13rem;
   min-width: 6rem;
@@ -50,7 +78,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-}
+} */
 /* navbar */
 
 /* grid */
@@ -58,6 +86,7 @@ body {
   display: grid;
   grid-template-columns: 30rem 1fr;
   grid-template-rows: 38rem 1rem;
+  /* transform: scale(0.7); */
   /* grid-template-columns: 7.5fr 2.5fr; */
 }
 /* grid */
@@ -90,12 +119,14 @@ body {
   display: flex;
 }
 
+
 .filter-total-effects-checkbox {
   /* margin-left: 1rem;
   padding-left: 1rem; */
   width: 1.5rem;
   height: 1.5rem;
   align-self: center;
+  z-index: -1;
 }
 /* filter tool */
 
@@ -144,20 +175,33 @@ body {
 .EchartsIoGraph-vis {
   margin-top: 1rem;
   overflow: hidden;
+  margin-right:150px;
 }
 
 
 /* Timeline */
 .year-timeline {
-  width: 1fr;
-  height: 7rem;
-  margin: -1.3rem 1rem 0rem 30rem;
-  padding-left: 4rem;
+  height: 10rem;
+  display: block;
+  padding: auto auto;
+  background-color: #f6f7fa;
+
+}
+.fsWZbl{
+  transform:scale(1.5);
+  display: block;
+  margin: auto auto;
+}
+.clnDEj.horizontal{
+  justify-content: center;
+  transform: scale(1);
 }
 
 .year-timeline-controls {
-  margin-top: -2rem;
-}
+  margin-top: -1.5rem;
+  transform:scale(1.5);
+  margin-bottom: -2rem;  
+  }
 
 .inTALd {
   min-height: 0 !important;
@@ -177,3 +221,12 @@ body {
 /* * {
   outline: 1px solid #f00 !important;
 } */
+#footer{
+width: 100%;
+text-align: center;
+padding: 30px 0;
+
+  margin: 0 0;
+  background-color: #dbe9ff;
+  font-size: 1.5vh;
+}
